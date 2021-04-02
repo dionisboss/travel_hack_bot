@@ -1,8 +1,8 @@
 from pymongo import MongoClient
-from .cred import username, password
+from .cred import username, password, client_str
 # username = input()
 # password = input()
-client_str = f'mongodb+srv://{username}:{password}@travlehack.apnll.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
 client = MongoClient(client_str)
 # setup db
 db_name = 'travelhack'
